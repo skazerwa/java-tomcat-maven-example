@@ -52,4 +52,11 @@
 </plugin>
     </plugins>
   </build>
+<distributionManagement>
+  <repository>
+    <id>testrepo-TestRepo</id>
+    <name>testrepo-TestRepo</name>
+    <url>https://testrepo-834139509645.d.codeartifact.us-east-1.amazonaws.com/maven/TestRepo/</url>
+  </repository>
+</distributionManagement>
 </project>
