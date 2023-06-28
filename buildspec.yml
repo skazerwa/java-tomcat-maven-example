@@ -10,10 +10,12 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn deploy
+      - mvn install
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
     - target/java-tomcat-maven-example.war
+    - 'appspec.yaml'
+  discard-paths: yes
