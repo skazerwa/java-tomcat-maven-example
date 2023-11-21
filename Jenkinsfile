@@ -1,11 +1,11 @@
 node {
-  stage('SCM')  {
-    git 'https://github.com/skatta3/java-tomcat-maven-example.git'     
-  }
-    stage('Build')    {
+   stage('scm') {
+        git 'https://github.com/skatta3/UserManagement.git'       
+   }
+    stage('Build') {
         sh 'mvn package'       
     }
-    stage('Archive') {
-    archiveArtifacts artifacts: 'target/*.war', followSymlinks: false       
-    }
+   stage('Archive') {
+        archiveArtifacts artifacts: 'target/*.war', followSymlinks: false      
+   }
 }
