@@ -1,6 +1,6 @@
 node {
    stage('scm') {
-        git 'https://github.com/skatta3/UserManagement.git'       
+        git branch: 'main', url: 'https://github.com/skatta3/UserManagement.git'       
    }
     stage('Build') {
         sh 'mvn package'       
