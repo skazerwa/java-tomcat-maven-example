@@ -17,5 +17,4 @@ phases:
 artifacts:
   files:
     - target/java-tomcat-maven-example.war
-    - 'appspec.yaml'
   discard-paths: yes
